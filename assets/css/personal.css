@@ -24,6 +24,29 @@
     border-radius: 50%;
 }
 
+.img-flex { 
+    display: flex;
+    flex-direction: row;
+    margin: 5vh;
+    justify-content: space-between;
+}
+
+.display-img {
+    height: 50vh;
+    width: 40vw;
+}
+
+.captioned-img {
+    position: relative;
+    max-width: 40vw;
+}
+
+.caption {
+    margin-top: 0px;
+    text-align: center;
+    font-size: x-small;
+}
+
 @media screen and (max-width: 1280px) {
     .headshot {
         display: block;
