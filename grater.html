@@ -42,8 +42,34 @@
 
 								After a semester of following laid out guidelines, we were left to our own devices, encouraged to add 
 								custom features, and start to take ownership of the engines we created.
+
+								So far, the technologies I have used to build this engine include 
+								<b>
+									C++, ASIO, SDL, Box2D, Lua, LuaBridge, and GLM.
+								</b>
 							
-							<h2>Multiplayer Support</h2>
+							<h2>Multiplayer Support Implementation</h2>
+							<h3>
+								Week 2 (4/22/2024)
+							</h3>
+								This week, my main goal was to reliably send messages over my network, as I ended last week only able
+								to send 1 message from each client, with crashes and corruption being very common. Though at first I 
+								thought this would be a quick fix, as I customized my client/server more and integrated it into my 
+								engine, I realized that I would need a foundational knowledge of ASIO's networking protocol and multithreading
+								to correctly implement my required functionality. That being said, I spent much of the week reading up on these 
+								technologies, tuning my network code as I went. I finished the week with finally achieving consistent and low-latency 
+								messages being sent over the network, with my server being able to interpret all of them without dropping any.
+								This now leaves me in a good spot to begin to start sending images from the server to the client and further designing
+								the Lua API in the coming weeks. I will also be aiming to implement a fixed timestep and begin to implement 
+								multiplayer across more than 1 machine, as my tests so far have been between two instances of the program both 
+								running on my machine. Check out my video update on this weeks progress!
+
+								<div class="video-container">
+									<iframe width="560" height="315" src="https://youtube.com/embed/hDa7B_uLWGY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							<h3>
+								Week 1 (4/17/2024)
+							</h3>
 								When beginning to think about the customizations I wanted to bring to my engine, my mind immediately
 								went to multiplayer support. Unity, Unreal, Godot and others already exist and provide amazing and
 								and performant tools to help game designers make incredibly diverse and impressive games. However, 
